@@ -1,15 +1,15 @@
 ﻿using System;
+using Telegram.Bot;
+using Telegram.Bot.Args;
 
 namespace bot_csharp_telegram
 {
     class Program
     {
-        static void Main(string[] args)
+        static ITelegramBotClient botClient;
+        static void Main()
         {
-            // ExemploMeuBotCsharp_bot
-            // 1945716668:AAHXhsfcBRd-vYtqpQtCKVJSI6ZkRlkaUcs
-            
-            Console.WriteLine("Hello World!");
+            botClient = new TelegramBotClient("YOUR_TOKEN");
         }
     }
 }
