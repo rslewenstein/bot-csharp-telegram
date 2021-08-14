@@ -33,7 +33,7 @@ namespace bot_csharp_telegram
                     // chatId: e.Message.Chat,
                     // text: "Você disse:\n " + e.Message.Text
                     e.Message.Chat.Id,
-                    $"Olá {e.Message.From.FirstName}, tudo bem? Você disse: \n {e.Message.Text}"
+                    $"Olá {e.Message.From.FirstName}, tudo bem? \nVocê disse: \n {e.Message.Text}"
                 );
             }
         }
